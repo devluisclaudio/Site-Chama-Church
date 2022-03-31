@@ -75,10 +75,10 @@ const Menu = (props) => {
                                 <NavLink active={link.includes("/contribuir")} href="/contribuir" activeClassName="active" className="sobre">Contribuir</NavLink>
                             </NavItem>
                             <NavItem >
-                                <NavLink  href="formulario.chamachurch.com" activeClassName="active" className="sobre">Formulário</NavLink>
+                                <a  href="formulario.chamachurch.com" activeClassName="active" className="sobre">Formulário</a>
                             </NavItem>
                             <NavItem >
-                                <NavLink  href="dash.chamachurch.com" activeClassName="active" className="sobre">Dashboard</NavLink>
+                                <a  href="dash.chamachurch.com" activeClassName="active" className="sobre">Dashboard</a>
                             </NavItem>
                             <NavItem >
                                 <NavLink href="/app" ></NavLink>
