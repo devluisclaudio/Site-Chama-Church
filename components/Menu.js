@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     Collapse,
     Navbar,
@@ -12,8 +12,23 @@ import {
 
 const Menu = (props) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [link, setlink] = useState('');
+    const [homepage, setHomepage] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
+
+
+
+    useEffect(() => {
+        setlink(window.location.href)
+    }, [])
+
+    useEffect(() => {
+        if (link === window.location.origin + '/')
+            setHomepage(true)
+    }, [link])
+
+
 
     return (
         <div>
@@ -27,7 +42,9 @@ const Menu = (props) => {
                     font-weight: bold;
                     font-size: 16px;
                 }
-                
+                .active {
+                    color: #fff !important;
+                }
                 `}
             </style>
             <Navbar className="menu-custom" dark expand="md">
@@ -37,27 +54,27 @@ const Menu = (props) => {
                     <Collapse isOpen={isOpen} className='mx-auto' navbar>
                         <Nav navbar>
                             <NavItem>
-                                <NavLink href="/" className="sobre">Home</NavLink>
+                                <NavLink active={homepage} href="/" className="sobre">Home</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink href="/sobre" className="sobre">A Igreja</NavLink>
+                            <NavItem >
+                                <NavLink active={link.includes("/sobre")} href="/sobre" className="sobre">A Igreja</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink href="/stream" className="sobre">Streaming</NavLink>
+                            <NavItem >
+                                <NavLink active={link.includes("/stream")} href="/stream" activeClassName="active" className="sobre">Streaming</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink href="/ministerios" className="sobre">Ministérios</NavLink>
+                            <NavItem >
+                                <NavLink active={link.includes("/ministerios")} href="/ministerios" activeClassName="active" className="sobre">Ministérios</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink href="/projetos" className="sobre">Projetos</NavLink>
+                            <NavItem >
+                                <NavLink active={link.includes("/projetos")} href="/projetos" activeClassName="active" className="sobre">Projetos</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink href="/faleconosco" className="sobre">Fale Conosco</NavLink>
+                            <NavItem >
+                                <NavLink active={link.includes("/faleconosco")} href="/faleconosco" activeClassName="active" className="sobre">Fale Conosco</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink href="/contribuir" className="sobre">Contribuir</NavLink>
+                            <NavItem >
+                                <NavLink active={link.includes("/contribuir")} href="/contribuir" activeClassName="active" className="sobre">Contribuir</NavLink>
                             </NavItem>
-                            <NavItem>
+                            <NavItem >
                                 <NavLink href="/app" ></NavLink>
                             </NavItem>
                         </Nav>
