@@ -3,6 +3,7 @@ import React from 'react';
 import Head from 'next/head';
 import Menu from '../components/Menu';
 import Rodape from '../components/Rodape';
+import CarrosselEventos from '../components/CarrosselEventos';
 
 import { Jumbotron, Container } from 'reactstrap';
 
@@ -128,6 +129,34 @@ function Home() {
                             <p>Discipulado</p>
                         </div>
                     </div>
+                </Container>
+            </Jumbotron>
+           
+            <Jumbotron fluid className="eventos">
+                <style>
+                    {`.eventos{
+                        background-color: #000;
+                        color: #fff;
+                        margin-bottom: 0rem !important;
+                        margin-top: -3rem !important;
+                    }
+                    hr {
+                        border-top: 2px solid #ff4700;
+                        box-shadow: 0 10px 10px -10px #ff4700 inset;
+                        height: 10px;
+                      }
+                    
+                    @media screen and (max-width: 700px) {
+                       
+                    }`}
+                </style>
+                <hr></hr>
+                <Container className="text-center">
+                    <div>
+                        <h2 className="display-4">Eventos e Conferências</h2>
+                        <p className="lead pb-4">Fique por dentro dos próximos eventos</p>
+                    </div>     
+                    <CarrosselEventos/>
                 </Container>
             </Jumbotron>
 
@@ -274,7 +303,7 @@ function Home() {
                     </div>
                     <div className="row">
                         <div className="col-md-6">
-                            <iframe class="responsive-iframe"  src="https://www.youtube.com/embed/vGUoBZNKjbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/vGUoBZNKjbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div className="col-md-6">
                             <div className="rounded-circle circulo centralizar">
