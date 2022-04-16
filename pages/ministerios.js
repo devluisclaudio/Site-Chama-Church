@@ -11,14 +11,14 @@ function Ministerios() {
   return (
     <div>
     <Head>
-        <title>Ministerios - Chama</title>
-        <meta name="description" content="Ministerios a chama church ..." />
+        <title>Ministerios - Chama Church</title>
+        <meta name="description" content="Ministerios da chama church ..." />
     </Head>
 
   
       <Menu/>
 
-      <Jumbotron fluid className="descr-top">
+      <Jumbotron fluid className="descr-top-chamachurch">
         <style>
           {`
           html, body, div{
@@ -26,7 +26,7 @@ function Ministerios() {
             padding: 0;
             border: 0;
           }
-          .descr-top{
+          .descr-top-chamachurch{
               background-color: #050c3d;
               color: #00a1fc;
               padding-top: 40px;
@@ -36,7 +36,7 @@ function Ministerios() {
           }`}
         </style>
         <Container className="text-center">
-          <h1>Página em desenvolvimento</h1>
+          <h1>Página em desenvolvimento da Chama Church</h1>
         </Container>
       </Jumbotron>
 

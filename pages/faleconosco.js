@@ -10,16 +10,16 @@ function Faleconosco() {
   return (
     <div>
     <Head>
-        <title>Fale Conosco - Chama</title>
-        <meta name="description" content="Solicitar  e pedir oração para igreja" />
+        <title>Fale Conosco - Chama Church</title>
+        <meta name="description" content="Solicitar  e pedir oração para igreja chama church" />
     </Head>
 
   
       <Menu />
 
-      <Jumbotron fluid className="descr-top">
+      <Jumbotron fluid className="descr-top-chamachurch">
         <style>
-          {`.descr-top{
+          {`.descr-top-chamachurch{
               background-color: #000;
               color: #fff;
               padding-top: 40px;
@@ -27,14 +27,14 @@ function Faleconosco() {
               margin-bottom: 0rem !important;
           }`}
         </style>
-        <Container className="text-center">
+        <Container className="text-center chamachurch">
           <h1 className="display-4">Fale conosco</h1>
         </Container>
       </Jumbotron>
 
-      <Jumbotron fluid className="form-orcamento">
+      <Jumbotron fluid className="form-orcamento-chamachurch">
         <style>
-          {`.form-orcamento{
+          {`.form-orcamento-chamachurch{
               padding-top: 80px;
               padding-bottom: 80px;
               background-color: #fff;

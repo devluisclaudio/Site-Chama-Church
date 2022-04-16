@@ -17,28 +17,28 @@ function Home() {
     return (
         <div>
             <Head>
-                <title>Home - Chama</title>
+                <title>Home - Chama Church</title>
                 <meta name="description" content="Chama Church - Minha Igreja, minha família" />
             </Head>
 
             <Menu />
 
-            <Jumbotron fluid className="descr-top">
+            <Jumbotron fluid className="descr-top-chamachurch">
                 <style>
-                    {`.descr-top{
-                        background-image: url('./img/273210126_2044714009035303_842738839556470297_n.jpg');
+                    {`.descr-top-chamachurch{
+                        background-image: url('./img/chamachurch_1.jpg');
                         background-repeat: no-repeat;
                         background-size: cover;
                         color: #fff;
                         margin-bottom: -0.5rem !important;
                     }
                     
-                    .logo-img{
+                    .logo-img-chamachurch{
                         border-radius: 80px;
                         width: 160px;
                         heigth: 160px;
                     }
-                    .titulo-1{
+                    .titulo-1-chamachurch{
                         font-family: "Times New Roman", Times, serif;
                         font-weight: bold;
                         text-shadow: 0 1px 0 #cccccc, 
@@ -48,7 +48,7 @@ function Home() {
                         0 1px 3px rgba(0, 0, 0, 0.3);
                         
                     }
-                    .slogan{
+                    .slogan-chamachurch{
                         font-family: "Times New Roman", Times, serif;
                         font-weight: bold;
                         font-size: 40px;
@@ -65,22 +65,22 @@ function Home() {
                     }`}
                 </style>
                 <Container className="text-center">
-                    <img className="logo-img" src="img/chama.jpg" />
-                    <h1 className="display-4 titulo-1">Chama Church</h1>
-                    <p className="lead slogan">Minha igreja, minha família.</p>
+                    <img className="logo-img-chamachurch" src="img/chama.jpg" />
+                    <h1 className="display-4 titulo-1-chamachurch">Chama Church</h1>
+                    <p className="lead slogan-chamachurch">Minha igreja, minha família.</p>
                     <p className="lead">
                         <a href='/app' className="btn btn-outline-warning btn-lg mt-4 app">Nosso App</a>
                     </p>
                 </Container>
             </Jumbotron>
 
-            <Jumbotron fluid className="pilares">
+            <Jumbotron fluid className="pilares-chamachurch">
                 <style>
-                    {`.pilares{
+                    {`.pilares-chamachurch{
                         background-color: #000;
                         margin-bottom: 0rem !important;
                     }
-                    .pilares .circulo{
+                    .pilares-chamachurch .circulo{
                         font-size: 42px;
                         background-color: #000;
                         color: #fff;
@@ -89,7 +89,7 @@ function Home() {
                         margin: 0 auto !important;
                         float: none !important;
                     }
-                    .pilares p{
+                    .pilares-chamachurch p{
                         color: #ff4700;
                         font-weight: bold;
                         text-shadow: 1px 3px 10px #ff4700;
@@ -132,9 +132,9 @@ function Home() {
                 </Container>
             </Jumbotron>
            
-            <Jumbotron fluid className="eventos">
+            <Jumbotron fluid className="eventos-chamachurch">
                 <style>
-                    {`.eventos{
+                    {`.eventos-chamachurch{
                         background-color: #000;
                         color: #fff;
                         margin-bottom: 0rem !important;
@@ -144,6 +144,9 @@ function Home() {
                         border-top: 2px solid #ff4700;
                         box-shadow: 0 10px 10px -10px #ff4700 inset;
                         height: 10px;
+                        width: 80%;
+                        margin: 0 auto;
+                        border-radius: 5px;
                       }
                     
                     @media screen and (max-width: 700px) {
@@ -160,14 +163,14 @@ function Home() {
                 </Container>
             </Jumbotron>
 
-            <Jumbotron fluid className="localidades">
+            <Jumbotron fluid className="localidades-chamachurch">
                 <style>
-                    {`.localidades{
+                    {`.localidades-chamachurch{
                         background-color: #fff;
                         margin-bottom: 0rem !important;
                     }
                     
-                    .localidades .circulo{
+                    .localidades-chamachurch .circulo{
                         width: 140px;
                         height: 140px;
                         background-color: #000;
@@ -216,15 +219,15 @@ function Home() {
                     </div>
                 </Container>
             </Jumbotron>
-            <Jumbotron fluid className="descr-top-2">
+            <Jumbotron fluid className="descr-top-2-chamachurch">
                 <style>
-                    {`.descr-top-2{
+                    {`.descr-top-2-chamachurch{
                         background-color: #000;
                         color: #fff;
                         margin-bottom: 0rem !important;
                     }
                     
-                    .logo-img-2{
+                    .logo-img-chamachurch-2{
                         width: 300px;
                         height: 200px;
                         margin: 5px 0;
@@ -243,22 +246,24 @@ function Home() {
                         margin: 5px 0;
                         
                     }
-                    @media screen and (max-width: 700px) {
+                    @media screen and (max-width: 770px) {
                         .caixa{
                             margin: auto;
-                            height:350px;
+                            height: 70%;
+                            min-width: 70%;
                             
                         }  
-                        .logo-img-2{
-                            width: 197px;
-                            heigth: 200px;
+                        .logo-img-chamachurch-2{
+                            min-width: 70%;
+                            max-width: 70%;
+                            height: 60%;
                             margin: auto;
                         }
                     }`}
                 </style>
                 <Container >
                     <div className="row justify-content-center">
-                        <img className="logo-img-2" src="./img/273006140_2045493305624040_4654080027662715721_n.jpg" />
+                        <img className="logo-img-chamachurch-2" src="./img/chamachurch_2.jpg" />
                         <div className="col-6 caixa text-center pt-5">
                             <p className="title-2">Ap. Richard Mattos</p>
                             <p className="lead">"Ser uma igreja onde os sem igreja e os feridos pela religiosidade chamam de a minha casa."</p>
@@ -266,14 +271,14 @@ function Home() {
                     </div>
                 </Container>
             </Jumbotron>
-            <Jumbotron fluid className="stream">
+            <Jumbotron fluid className="stream-chamachurch">
                 <style>
-                    {`.stream{
+                    {`.stream-chamachurch{
                         background-color: #fff;
                         margin-bottom: 0rem !important;
                     }
                     
-                    .stream .circulo{
+                    .stream-chamachurch .circulo{
                         width: 140px;
                         height: 140px;
                         background-color: #000;
